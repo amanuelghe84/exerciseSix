@@ -1,0 +1,46 @@
+.card-container{
+    width: 100%;
+}
+.card {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 5px solid #31d80f;
+    margin: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    box-shadow: 5px 5px 10px;
+}
+h3{
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+p{
+    color: rgb(0, 30, 255);
+}
+/* Tablet view (two columns) */
+@media (min-width:600px) and (max-width:900px) {
+    .card{
+        width: 49%;
+        float: left;
+    }
+}
+
+/*  Desktop view (Three columns) */
+@media (min-width:900px) {
+
+    .card{
+        width: 32%;
+        float: left;
+    }
+}
+/* Bonus Change card background color on hover */
+
+.card:hover{
+    background-color: lightgray;
+}

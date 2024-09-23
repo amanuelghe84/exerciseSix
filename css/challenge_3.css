@@ -1,0 +1,28 @@
+.grid-container{
+    width: 100%;
+}
+.grid-item {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc
+}
+/* Tablet view (two columns) */
+@media (min-width:600px) {
+    .grid-item{
+        width:49%;
+        float:left;
+    }
+}
+/*  Desktop view (Three columns) */
+@media (min-width:900px) {
+    .grid-item{
+        width:32%;
+        float: left;
+    }
+}
+/* Bonus: Hover effect */
+
+.grid-item:hover{
+    background-color: lightgray;
+}

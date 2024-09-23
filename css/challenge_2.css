@@ -1,0 +1,39 @@
+.navbar{
+    background-color: rgb(30, 30, 31);
+    overflow: hidden;
+}
+.nav-links{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.nav-links li{
+    display: inline-block;
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    padding:20px 20px;
+    display: block;
+}
+
+.nav-links li a:hover{
+    background-color: rgb(116, 121, 116, 0.75);
+    box-shadow: 0 10px 10px #af1313;
+    border-radius: 10px;
+}
+/* Media query for screen smaller than 600px */
+@media(max-width:600px){
+    .nav-links li{
+        display: block;
+      }
+}
+.nav-links{
+    text-align: left;
+}
+/* Bonus: Change text color in Vertical mode */
+.nav-links li a{
+    color: lightblue;
+}
