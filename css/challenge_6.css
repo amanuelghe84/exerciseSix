@@ -1,0 +1,40 @@
+/*  Default font sizes */
+.text-container h1{
+    font-size: 24px;
+    color: coral;
+}
+.text-container p{
+    font-size: 16px;
+    color: rgb(0, 255, 34);
+}
+/* Increase font size for screens larger than 800px */
+
+@media (min-width: 800px) {
+    
+    .text-container h1{
+        font-size: 32px;
+        color:greenyellow;
+    }
+    .text-container p{
+        font-size: 20px;
+        color: blueviolet;
+    }
+}
+
+/* decrease font size for screens smaller than 500px */
+@media (max-width: 500px) {
+    .text-container h1{
+        font-size: 18px;
+        color: blue;
+    }
+    .text-container p{
+        font-size: 14px;
+        color: deepskyblue;
+    }
+}
+/* Bonus: Change font style in portrait orientation */
+@media (orientation: portrait) {
+    .text-container p{
+        font-style:italic ;
+    }
+}
